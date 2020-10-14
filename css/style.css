@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
  *:focus {
     outline: none;
@@ -34,6 +34,15 @@ line-height: 1.7;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	line-height: 1.1;
+}
+.resourcesdiv{
+    background-color: #616161;
+}
+.resourcesdiv h6{
+    color: white !important;
+}
+.resourcesdiv a{
+    color: white !important;
 }
 
 .myHeader {
@@ -166,6 +175,9 @@ footer{
 #descriptions{
     width: 100%;
 }
+.btndiv{
+    text-align: center;
+}
 #comrow{
     display: flex;
     flex-direction: row;
@@ -245,7 +257,67 @@ background: #b30000;
 background: #990000;
 }
 
+/*MODAL*/
+.modal-content{
+    background-color: #1a1a1a;
+    color: white !important;
+}
+/*Modal Links */
+.nav-tabs{
+    border: 0;
+}
+.lrlinks{
+    border: 0 !important;
+}
+
+.btn-tab{
+    text-decoration: none;
+    border: 0;
+    color: white;
+    background: transparent;
+    padding: 10px;
+    font-size: 17px;
+    transition: 0.2s all ease;
+}
+.btn-tab:focus{
+    outline: 0 !important;
+}
+.btn-tab:hover{
+    text-decoration: none;
+    color: rgb(153,0,0);
+    border-bottom: 2px solid rgb(153,0,0);
+}
+
+.tab-active{
+    color: rgb(153,0,0);
+    border-bottom: 2px solid rgb(153,0,0);
+}
 
 
+.form-control:focus{
+    border-color: rgb(153,0,0);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(153,0,0,1);
+}
+.btn-danger{
+    background-color: rgb(153,0,0);
+    border: 0;
+}
+.btn-danger:hover{
+    background-color: rgb(141, 0, 0);
+}
+.btn-danger:active{
+    background-color: rgb(128, 2, 2) !important;
+}
+.activetab{
+    border-bottom: rgb(153,0,0);
+    border: 2px solid;
+}
+.box-shadow{
+    box-shadow: 1px 6px 7px #aaaaaa;
+    width: 65.4% !important;
+}
 
-
+.socialicons{
+    margin:0 auto;
+    margin-left: 20px;
+}

@@ -35,7 +35,7 @@
 							<a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
 							class="nav-link dropdown-toggle font-weight-bold text-uppercase ">DISCOVER</a>
 							<div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-								<div class="container">
+								<div class="container box-shadow">
 									<div class="row bg-white">
 										<div class="col-lg-8 col-xl-9 ">
 											<div class="p-4">
@@ -65,7 +65,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-4 col-xl-3 d-lg-block">
+										<div class="resourcesdiv col-lg-4 col-xl-3 d-lg-block">
 											<br>
 											<a href="#" id="resources"><h6 class="myMenuHeading font-weight-bold">Resources<span>▼</span></h6></a>
 											<div id="resources-item" class="hide"><ul class="list-unstyled">
@@ -102,7 +102,7 @@
 	</header>
 	<!-- Modal -->
 	<div class="modal fade" id="loginRegisterPop">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-md modal-dialog-centered">
 		  <div class="modal-content">
 		  
 			<!-- Modal Header -->
@@ -113,30 +113,67 @@
 				  <!-- Nav tabs -->
 				  <ul class="nav nav-tabs">
 					<li class="nav-item">
-					  <a class="nav-link active" data-toggle="tab" href="#home">Kyçy</a>
+					  <a id="loginbtn" class="btn-tab tab-active" data-toggle="tab" href="#homelogin">Kyçu</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" data-toggle="tab" href="#menu1">Regjistrohu</a>
+					  <a id="registerbtn" class="btn-tab" data-toggle="tab" href="#register">Regjistrohu</a>
 					</li>
 				  </ul>
 				
 				  <!-- Tab panes -->
 				  <div class="tab-content">
-					<div id="home" class="container tab-pane active"><br>
-					  <h3>Kyçy</h3>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div id="homelogin" class="container tab-pane active"><br>
+					  <h3>Kyçu</h3>
+					  <p>Këtu mund të kyçesh në llogarinë tënde të E-Library</p>
+						<form action="?" method="post">
+							<div class="form-group">
+								<div class="form-group">
+									<label for="usr">Username: *</label>
+								<input type="text" class="form-control" placeholder="Your Username" required id="uname">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Password: *</label>
+									<input type="password" class="form-control" placeholder="Your Password" required id="pwd">
+								  </div>
+								  <br>
+								  <div class="form-group">
+									<input type="button" class="btn btn-danger btn-block" value="Submit"  id="submit">
+								  </div>
+							</div>
+						</form>
 					</div>
-					<div id="menu1" class="container tab-pane fade"><br>
+					<div id="register" class="container tab-pane fade"><br>
 					  <h3>Regjistrohu tani</h3>
-					  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<form action="?" method="post">
+							<div class="form-group">
+								<label for="usr">Full Name: *</label>
+								<input type="text" class="form-control" placeholder="ex. John Doe" required id="fname">
+							  </div>
+							  <div class="form-group">
+								<label for="usr">Username: *</label>
+								<input type="text" class="form-control" placeholder="ex. johndoe1" required id="uname">
+							  </div>
+							  <div class="form-group">
+								<label for="usr">E-mail: *</label>
+								<input type="email" class="form-control" placeholder="ex. johndoe@example.com" required id="fname">
+							  </div>
+							  <div class="form-group">
+								<label for="pwd">Password: *</label>
+								<input type="password" class="form-control" placeholder="Your Password" required id="pwd">
+							  </div>
+							  <br>
+							  <div class="form-group">
+								<input type="button" class="btn btn-danger btn-block" value="Submit"  id="submit">
+							  </div>
+						</form>
 					</div>
 				  </div>
 				</div>
 			
 			<!-- Modal footer -->
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			</div>
+			
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+			
 			
 		  </div>
 		</div>
@@ -151,7 +188,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="text-center text-light mt-5">What is Lorem Ipsum?
+                    <h2 class="text-center text-light mt-5">Deshironi të lexoni libra?
                     </h2>
                 </div>
             </div>
@@ -160,7 +197,8 @@
                     <p id="descriptions" class="text-light text-center">It is a long established fact that a reader will be distracted by the readable
                         content of a page when looking at its layout. The point of using Lorem Ipsum
                         is that it has a more-or-less normal distribution of letters, 
-                        as opposed to using 'Content here, content here'.</p>
+						as opposed to using 'Content here, content here'.</p>
+					<div class="btndiv"><button class="btn btn-outline-danger subscribe-btn">Abonohu Ketu!</button></div>	
                 </div>
             </div>
             <div class="row mt-5" id="comrow">
@@ -184,11 +222,11 @@
                     <a href=""> <p>Languages</p></a>
                     <a href=""> <p>Authors</p></a>
                 </div>
-                <div class="col col-lg-3 col-sm-6 col-12 combox">
-                    <div class="h3"><h3 class="text-light">Follow</h3></div><br>
-                   <div class="icons"><a href=""><img width="30" height="30" src="content/img/instagram.png" alt="instagram"></a>
-                   <a href=""><img width="30" height="30" src="content/img/facebook.png" alt="instagram"></a> 
-                   <a href=""><img width="30" height="30" src="content/img/email.png" alt="instagram"></a>
+                <div id="iconsdiv" class="col col-lg-3 col-sm-6 col-12 combox">
+                    <div class="h3"><h3 class="text-light">Follow </h3></div><br>
+                   <div><a href=""><img class="socialicons hide" width="30" height="30" src="content/img/instagram.png" alt="instagram"></a>
+                   <a href=""><img class="socialicons hide" width="30" height="30" src="content/img/facebook.png" alt="instagram"></a> 
+                   <a href=""><img class="socialicons hide" width="30" height="30" src="content/img/email.png" alt="instagram"></a>
                 </div>  
                     
                 </div>

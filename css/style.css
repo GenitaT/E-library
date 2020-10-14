@@ -7,6 +7,93 @@
  *:focus {
     outline: none;
 } 
+.megamenu {
+    position: static;
+}
+
+.megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%
+}
+
+.text-uppercase {
+    letter-spacing: 0.08em
+}
+.d-lg-block{
+	background-color: #e2f6f2;
+}
+.nav-link {
+ color: #9b9b9b!important;
+ font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+line-height: 1.7;
+ }
+.myMenuHeading{
+	color: #616161!important;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	line-height: 1.1;
+}
+
+.myHeader {
+    background: rgb(153,0,0);
+    background: linear-gradient(180deg, rgba(153,0,0,1) 0%, rgba(179,0,0,1) 100%);
+}
+.dropdown-toggle {
+	color: #fff!important;
+	margin-top: 7px!important;
+}
+
+#searchBar{
+    background-color: rgba(201, 76, 76, 0);
+    border:0;
+    border-bottom: 3px solid white;
+    color:white;
+    border-radius: 0;
+    outline-style: white;
+    box-shadow: none;
+}
+#searchBar::placeholder {
+    color: white;
+    opacity: 1;
+}
+#searchBar:focus{
+    border:2px solid white;
+    transition:300ms ease-in-out;
+}
+#logIn{
+    color: white;
+    background-color: transparent;
+    font-size:20px;
+    font-weight:600;
+    border-left:1px solid white;
+}
+#login{
+    margin-top:2.2%;
+}
+.hide{
+    display:none;
+}
+#resources span{
+    font-size:15px;
+    margin-left:3px;
+}
+#resources{
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .form-inline {
+    width:100%!important;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .btn {
+    margin-top:10px!important;
+  }
+}
+
+
 
 .navbar.navbar-expand-md{
     padding:25px;
@@ -64,7 +151,99 @@
     width:100% !important;
 }
 
+footer{
+    max-width: 100%;
+      padding: 10px;
+    background:#1a1a1a;
+   border-top: 5px solid;
+   border-top-color: rgb(153,0,0);
+}
+.desccol{
+    max-width: 50% !important;
+    margin: 0 auto;
 
+}
+#descriptions{
+    width: 100%;
+}
+#comrow{
+    display: flex;
+    flex-direction: row;
+}
+.combox:hover h3{
+  color:rgb(153,0,0) !important ;
+  transition: 0.3s ease-in;
+}
+.combox a:hover{
+  color:rgb(153,0,0) !important ;
+  transition: 0.2s ease-in;
+}
+
+.combox a{
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+
+.combox .h3{
+  text-align: center;
+  pointer-events: none;
+  border-bottom: 1px solid transparent;
+  border-width: 3px;
+  width: 0px;
+  transition: width .5s ease, background-color .5s ease;
+
+}
+
+.combox:hover .h3{
+  width: 100%;
+  border-bottom: 3px solid rgb(153,0,0);
+}
+@media only screen and (max-width: 991px) {
+.combox a {
+  text-align: center;
+}
+.combox .h3{
+  text-align: center;
+  pointer-events: none;
+  border-bottom: 1px solid transparent;
+  border-width: 3px;
+  width: 100%;
+  transition: none;
+}
+.combox h3{
+    color: rgb(153,0,0) !important;
+}
+.icons {
+  text-align: center;
+}
+}
+
+.icons img{
+margin-left: 5%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, .3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #b30000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #990000;
+}
 
 
 

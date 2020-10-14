@@ -20,26 +20,26 @@
 	<header class="myHeader">
 		<div class="container d-flex justify-content-around">
 		<div class="col-lg-10">
-			<nav class="navbar navbar-expand-lg navbar-light  py-3"> 
-				<button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" 
+			<nav class="navbar navbar-expand-lg navbar-light  py-3">
+				<button id="hamburger-icon" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" 
 					aria-label="Toggle navigation" class="navbar-toggler"> 
-					<span class="navbar-toggler-icon"></span> 
+					<span id="navbar-toggler-id" class="navbar-toggler-icon"></span> 
 				</button>
-				
-				<div id="navbarContent" class="collapse navbar-collapse">
-					<ul class="navbar-nav ">
-						<a class="navbar-brand" href="#">
-							<img src="content/img/logo.png" alt="E-Library" height="auto" width="70px">
-						</a>
+
+				<a class="navbar-brand" href="#">
+							<img src="content/img/logo.png" alt="E-Library" height="auto" width="70px" id="logo">
+				</a>
+				<div class="navbar-collapse">
+					<ul class="navbar-nav">
 						<li class="nav-item dropdown megamenu">
 							<a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-							class="nav-link dropdown-toggle font-weight-bold text-uppercase ">DISCOVER</a>
-							<div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+							class="nav-link dropdown-toggle font-weight-bold text-uppercase">DISCOVER</a>
+							<div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0">
 								<div class="container">
 									<div class="row bg-white">
-										<div class="col-lg-8 col-xl-9 ">
+										<div class="col-lg-8 col-xl-9">
 											<div class="p-4">
-												<div class="row">
+												<div class="row" id="mobileMenu">
 													<div class="col-lg-6 col-sm-12">
 														<h6 class="myMenuHeading font-weight-bold">Genres</h6>
 														<ul class="list-unstyled">
@@ -82,15 +82,14 @@
 							</div>
 						</li>
 						<form class="form-inline ml-5">
-							<input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search..." aria-label="Search">
+							<input class="form-control mr-sm-2 hidden-sm" id="searchBar" type="search" placeholder="Search..." aria-label="Search">
 							<a  id="search" href="#"><img src="content/img/search.png" alt="E-Library" height="30px" width="30px"></a>
 						</form>
-					</ul>
-				
-					
+					</ul>			
 				</div>
 			</nav>
 		</div>
+
 		
 		<ul id="login" class="nav navbar-nav ml-auto">
 			<li class="nav-item dropdown">
@@ -98,6 +97,23 @@
 				</div>
 			</li>
 		</ul>			
+		</div>
+
+		<div class="mobile-menu collapse" id="navbarContent">
+			<ul class="list-unstyled">
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0">Action & Adventure</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Bios & History</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Children's</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Fantasy</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Historical Fiction</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Horror</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Literary Fiction</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Mystery & Thriller</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Non-Fiction</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Account</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Science Fiction</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Young Adult</a></li>														
+			</ul>
 		</div>
 	</header>
 	<!-- Modal -->

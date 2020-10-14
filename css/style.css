@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+ *:focus {
+    outline: none;
+} 
+
+.navbar.navbar-expand-md{
+    padding:25px;
+    background: rgb(153,0,0);
+    background: linear-gradient(180deg, rgba(153,0,0,1) 0%, rgba(179,0,0,1) 100%);
+}
+.navbar.navbar-expand-md.navbar .navbar-nav.mr-auto .nav-link.dropdown-toggle{
+    color:white;
+    font-weight: 600;
+    font-size:28px;
+}
+.btn-outline-danger{
+    color:white;
+    border-color: white;
+}
+.btn-outline-danger:hover{
+    color:#b30000;
+    background-color: white;
+}
+#searchBar{
+    background-color: rgba(201, 76, 76, 0);
+    border:0;
+    border-bottom: 3px solid white;
+    color:white;
+    border-radius: 0;
+    outline-style: white;
+    box-shadow: none;
+}
+#searchBar::placeholder {
+    color: white;
+    opacity: 1;
+}
+#searchBar:focus{
+    border:3px solid white;
+    transition:300ms ease-in-out;
+    box-shadow: 0 0 25px 0 white;
+}
+#logIn{
+    color: white;
+    background-color: transparent;
+    font-size:20px;
+    font-weight:600;
+    border-left:1px solid white;
+}
+/* #navbar-toggler{
+    border:1px solid white;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='0' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: white;
+} */
+.navbar.navbar-expand-md .container .navbar-nav.mr-auto .nav-item.dropdown{
+    width:100%;
+}
+
+.navbar-nav .dropdown-menu {
+    width:100% !important;
+}
+
+
+
+
+
+
+

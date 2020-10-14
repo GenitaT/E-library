@@ -144,12 +144,7 @@ line-height: 1.7;
 
   /* logo mobile responsive */
   @media only screen and (max-width:560px){
-    #search{
-        display:none;
-    }
-    #searchBar{
-        display:none;
-    }
+   
     #mobileMenu{
         display: block;
         width:100%;
@@ -163,16 +158,6 @@ line-height: 1.7;
     }
     #megamneu{
         display:none;
-    }
-    .mobile-menu{
-        width:100%;
-        background: rgb(153,0,0);
-        background: linear-gradient(180deg, rgba(153,0,0,1) 0%, rgba(179,0,0,1) 100%);
-        position: absolute ;
-        text-align:center;
-        color:white !important;
-        font-weight: 600;
-        text-decoration: none;
     }
     .mobile-menu li a{
         color:white !important;
@@ -304,6 +289,33 @@ footer{
 .combox a {
   text-align: center;
 }
+.navbar-collapse{
+    display: none;
+}
+.mobile-menu li a{
+    color:white !important;
+}
+.mobile-menu a:active{
+    background-color: white;
+    color:rgb(153,0,0) !important;
+}
+.mobile-menu a:focus{
+    background-color: white;
+    color:rgb(153,0,0) !important;
+}
+.mobile-menu{
+    width:100%;
+    background: rgb(153,0,0);
+    background: linear-gradient(180deg, rgba(153,0,0,1) 0%, rgba(179,0,0,1) 100%);
+    position: absolute ;
+    text-align:center;
+    color:white !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+#logo{
+    margin-left: -250%;
+}
 .combox .h3{
   text-align: center;
   pointer-events: none;
@@ -312,6 +324,27 @@ footer{
   width: 100%;
   transition: none;
 }
+#megamneu{
+    display: none;
+}
+#searchform{
+    display: none;
+}
+#searchmobile{
+    padding: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#searchmobile input{
+    width: 50%;
+    display: inline;
+}
+#searchmobile img{
+    margin-left:2%;
+    margin-top: 1%;
+}
 .combox h3{
     color: rgb(153,0,0) !important;
 }
@@ -319,7 +352,27 @@ footer{
   text-align: center;
 }
 }
+@media only screen and (max-width: 767px) {
+    #logo{
+        margin-left: -100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+   .mobile-menu{
+       display: none;
+   }
+}
 
+@media only screen and (max-width: 419px) {
+    #logo{
+        margin-left: -20%;
+    }
+}
+@media only screen and (max-width: 378px) {
+    #logo{
+        margin-left: 0;
+    }
+}
 .icons img{
 margin-left: 5%;
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
 
+/* all style */
 *{
     margin: 0;
     font-family: 'Roboto', sans-serif !important;
@@ -7,6 +8,8 @@
  *:focus {
     outline: none;
 } 
+
+/* megamenu style */
 .megamenu {
     position: static;
 }
@@ -17,6 +20,7 @@
     width: 100%
 }
 
+/* nav menu and resource style */
 .text-uppercase {
     letter-spacing: 0.08em
 }
@@ -54,6 +58,7 @@ line-height: 1.7;
 	margin-top: 7px!important;
 }
 
+/* search style */
 #searchBar{
     background-color: rgba(201, 76, 76, 0);
     border:0;
@@ -71,6 +76,8 @@ line-height: 1.7;
     border:2px solid white;
     transition:300ms ease-in-out;
 }
+
+/* login style */
 #logIn{
     color: white;
     background-color: transparent;
@@ -102,47 +109,8 @@ line-height: 1.7;
   }
 }
 
-/* Arrow animated dropdown for Discover*/
-.arrow {
-    width: 1.25rem;
-    height: 1.25rem;
-    display: inline-block;
-    position: relative;
-    margin: 0 1rem;
-  }
-  .arrow span {
-    top: 0.5rem;
-    position: absolute;
-    width: 0.75rem;
-    height: 0.1rem;
-    background-color: #efefef;
-    display: inline-block;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-  }
-  .arrow span:first-of-type {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  .arrow span:last-of-type {
-    right: 0;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  .arrow.active span:first-of-type {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  .arrow.active span:last-of-type {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #mobile-logo{
-      display:none;
-  }
 
-  /* logo mobile responsive */
+  /* mobile responsive */
   @media only screen and (max-width:560px){
    
     #mobileMenu{
@@ -280,11 +248,12 @@ footer{
   transition: width .5s ease, background-color .5s ease;
 
 }
-
 .combox:hover .h3{
   width: 100%;
   border-bottom: 3px solid rgb(153,0,0);
 }
+
+ /* wide responsive */
 @media only screen and (max-width: 991px) {
 .combox a {
   text-align: center;

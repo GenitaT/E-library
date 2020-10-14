@@ -17,15 +17,18 @@
 
 </head> 
 <body>
+	<!-- header start -->
 	<header class="myHeader">
 		<div class="container d-flex justify-content-around">
 		<div class="col-lg-10">
+			<!-- navigation start -->
 			<nav class="navbar navbar-expand-lg navbar-light  py-3">
+				<!-- hamburger button called -->
 				<button id="hamburger-icon" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" 
 					aria-label="Toggle navigation" class="navbar-toggler"> 
 					<span id="navbar-toggler-id" class="navbar-toggler-icon"></span> 
 				</button>
-
+				<!-- logo called -->
 				<a class="navbar-brand" href="#">
 							<img src="content/img/logo.png" alt="E-Library" height="auto" width="70px" id="logo">
 				</a>
@@ -33,12 +36,13 @@
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown megamenu">
 							<a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-							class="nav-link dropdown-toggle font-weight-bold text-uppercase ">DISCOVER</a>
+							class="nav-link dropdown-toggle font-weight-bold text-uppercase ">DISCOVER</a></button>
 							<div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
 								<div class="container box-shadow">
 									<div class="row bg-white">
 										<div class="col-lg-8 col-xl-9">
 											<div class="p-4">
+												<!-- mobile menu and menu -->
 												<div class="row" id="mobileMenu">
 													<div class="col-lg-6 col-sm-12">
 														<h6 class="myMenuHeading font-weight-bold">Genres</h6>
@@ -81,6 +85,7 @@
 								</div>
 							</div>
 						</li>
+						<!-- end of menu -->
 						<form id="searchform" class="form-inline ml-5">
 							<input class="form-control mr-sm-2 hidden-sm" id="searchBar" type="search" placeholder="Search..." aria-label="Search">
 							<a  id="search" href="#"><img src="content/img/search.png" alt="E-Library" height="30px" width="30px"></a>
@@ -88,15 +93,17 @@
 					</ul>			
 				</div>
 			</nav>
+			<!-- navigation End -->
 		</div>
 
-		
+		<!-- Start login -->
 		<ul id="login" class="nav navbar-nav ml-auto">
 			<li class="nav-item dropdown">
 					<a href="#"class="dropdown-item" data-toggle="modal" data-target="#loginRegisterPop" id="logIn">Log In</a>
 				</div>
 			</li>
 		</ul>			
+		<!-- End login -->
 		</div>
 
 		<div class="mobile-menu collapse" id="navbarContent">
@@ -120,6 +127,8 @@
 			</ul>
 		</div>
 	</header>
+	<!-- Header End -->
+
 	<!-- Modal -->
 	<div class="modal fade" id="loginRegisterPop">
 		<div class="modal-dialog modal-md modal-dialog-centered">

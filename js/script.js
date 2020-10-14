@@ -1,8 +1,9 @@
-//Resources animated dropdown
 $(document).ready(function(){
+    //Resources animated dropdown
     $('#resources').mouseenter(function(){
         $('#resources-item').slideDown('slow');
     });
+    //Resources animated dropdown
 
     $('#registerbtn').click(function(){
         $('#loginbtn').removeClass('tab-active');
@@ -21,4 +22,6 @@ $(document).ready(function(){
     $('#iconsdiv').mouseleave(function(){
         $('.socialicons').slideUp('slow');
     });
+
+
 });

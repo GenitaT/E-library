@@ -372,6 +372,11 @@ background: #990000;
     background-color: #1a1a1a;
     color: white !important;
 }
+/* Ngjyra e inputave tlogin edhe register formes */
+.modal-content .inputlg{
+    background-color: #1a1a1a ;
+    color: white;
+}
 /*Modal Links */
 .nav-tabs{
     border: 0;

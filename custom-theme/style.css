@@ -1,0 +1,67 @@
+/*
+Theme Name: E-Library
+Author: Trojan Team
+*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: white;
+}
+header {
+    background: white;
+    width: 100%;
+}
+
+/*FOOTER CSS */
+footer{
+    max-width: 100%;
+    padding: 10px;
+    background:#1a1a1a;
+   border-top: 5px solid;
+   border-top-color: rgb(153,0,0);
+}
+.desccol{
+    max-width: 50% !important;
+    margin: 0 auto;
+
+}
+#descriptions{
+    width: 100%;
+}
+.btndiv{
+    text-align: center;
+}
+#comrow{
+    display: flex;
+    flex-direction: row;
+}
+.combox:hover h3{
+  color:rgb(153,0,0) !important ;
+  transition: 0.3s ease-in;
+}
+.combox a:hover{
+  color:rgb(153,0,0) !important ;
+  transition: 0.2s ease-in;
+}
+
+.combox a{
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+
+.combox .h3{
+  text-align: center;
+  pointer-events: none;
+  border-bottom: 1px solid transparent;
+  border-width: 3px;
+  width: 0px;
+  transition: width .5s ease, background-color .5s ease;
+
+}
+.combox:hover .h3{
+  width: 100%;
+  border-bottom: 3px solid rgb(153,0,0);
+}

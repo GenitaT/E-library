@@ -9,8 +9,9 @@ body {
     background: white;
 }
 header {
-    background: white;
-    width: 100%;
+  background-image: linear-gradient(to right,#ff7854 0,#ff5079 100%);
+  width: 100%;
+  max-height: 135px;
 }
 
 /*FOOTER CSS */
@@ -64,4 +65,29 @@ footer{
 .combox:hover .h3{
   width: 100%;
   border-bottom: 3px solid rgb(153,0,0);
+}
+/* Custom CSS per megaMenu */
+#mega-menu-wrap-primary{
+ min-width: 100%;
+}
+@media screen and (max-width:768px){
+  #mega-menu-primary{
+  margin-left: 50px !important;
+  }
+}
+#mega-menu-item-258 a{
+  font-family:  Montserrat!important;
+  color: #616161!important;
+  font-size: 25px!important;
+  font-weight: bold;
+}
+#mega-menu-item-260 a {
+  font-family:  Montserrat!important;
+  color: #616161!important;
+  font-size: 25px!important;
+  font-weight: bold;
+}
+/*CSS per Search ne NAV */
+.is-search-icon{
+  background-color: #17a288!important;
 }

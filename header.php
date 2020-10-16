@@ -42,5 +42,7 @@
         </div>               
     </div>    
 </div>  
-<?php get_search_form(); ?> 
+        <div class="col-1 col-sm-12">
+            <?php get_search_form(); ?> 
+         </div>
 </header>

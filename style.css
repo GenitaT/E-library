@@ -9,8 +9,9 @@ body {
     background: white;
 }
 header {
-    background: white;
-    width: 100%;
+  background-image: linear-gradient(to right,#ff7854 0,#ff5079 100%);
+  width: 100%;
+  max-height: 135px;
 }
 
 /*FOOTER CSS */
@@ -65,31 +66,34 @@ footer{
   width: 100%;
   border-bottom: 3px solid rgb(153,0,0);
 }
-.mega-sub-menu {
-  width: 650px!important;
-  background-color: #fff;
+/* Custom CSS per megaMenu */
+#mega-menu-wrap-primary{
+ min-width: 100%;
 }
-#mega-menu-195-0-2 {
-  background-color: #e2f6f2!important;
+@media screen and (max-width:768px){
+  #mega-menu-primary{
+  margin-left: 50px !important;
+  }
 }
-#mega-menu-195-0-0 {
-  background-color: #fff!important;
+#mega-menu-item-258 a{
+  font-family:  Montserrat!important;
+  color: #616161!important;
+  font-size: 25px!important;
+  font-weight: bold;
 }
-#mega-menu-195-0-1 {
-  background-color: #fff!important;
+#mega-menu-item-260 a {
+  font-family:  Montserrat!important;
+  color: #616161!important;
+  font-size: 25px!important;
+  font-weight: bold;
 }
-#mega-menu-195-0-1 a{
-  font-family: Montserrat!important;
-  font-size: 16px!important;
-  text-transform: capitalize!important;
+/*CSS per Search ne NAV */
+.is-search-icon{
+  background-color: #17a288!important;
 }
-#mega-menu-195-0-0 a{
-  font-family: Montserrat!important;
-  font-size: 16px!important;
-  text-transform: capitalize!important;
-}
-#mega-menu-195-0-2 a{
-  font-family: Montserrat!important;
-  font-size: 16px!important;
-  text-transform: capitalize!important;
+.is-search-form {
+  float: right;
+  margin-right: 400px;
+  min-width: 310px;
+  margin-top: -55px;
 }
